@@ -3,147 +3,210 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MathBlitz Privacy Policy</title>
+    <title>Math Blitz Privacy Policy</title>
     <style>
-      :root {
-        color-scheme: light dark;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
-
-      body {
-        margin: 0 auto;
-        max-width: 720px;
-        padding: 2rem 1.5rem 4rem;
-        line-height: 1.6;
-      }
-
-      h1,
-      h2 {
-        line-height: 1.25;
-      }
-
-      h1 {
-        margin-bottom: 0.5rem;
-      }
-
-      p {
-        margin: 0.6rem 0 1rem;
-      }
-
-      ul {
-        padding-left: 1.2rem;
-      }
-
-      section {
-        margin-top: 1.5rem;
-      }
-
-      footer {
-        margin-top: 2.5rem;
-        font-size: 0.9rem;
-      }
+      :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      body { margin: 0 auto; max-width: 720px; padding: 2rem 1.5rem 4rem; line-height: 1.6; }
+      h1, h2, h3 { line-height: 1.25; }
+      h1 { margin-bottom: 0.5rem; }
+      h2 { margin-top: 2rem; }
+      h3 { margin: 1.2rem 0 0.3rem; font-size: 1rem; }
+      p { margin: 0.6rem 0 1rem; }
+      ul { padding-left: 1.2rem; }
+      li { margin: 0.25rem 0; }
+      table { border-collapse: collapse; width: 100%; margin: 0.6rem 0 1rem; }
+      th, td { text-align: left; padding: 0.4rem 0.5rem; border-bottom: 1px solid rgba(127,127,127,.3); vertical-align: top; }
+      footer { margin-top: 2.5rem; font-size: 0.9rem; }
     </style>
   </head>
   <body>
     <header>
-      <h1>MathBlitz Privacy Policy</h1>
-      <p>Last updated: November 14, 2025</p>
-      <p>
-        This Privacy Policy describes how MathBlitz (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
-        &ldquo;our&rdquo;) collects, uses, and shares information when you use the MathBlitz mobile
-        application and related services (collectively, the &ldquo;Service&rdquo;).
-      </p>
+      <h1>Math Blitz Privacy Policy</h1>
+      <p>Last updated: October 5, 2026</p>
+      <p>Math Blitz is a live mental-math game for iPhone and iPad. It is made by Clyon Jackson (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This policy covers the Math Blitz app.</p>
+      <p>The short version:</p>
+      <ul>
+        <li>We collect what the game needs to work: a player ID, the name you play under, your age group, and your races.</li>
+        <li>Other players see your name, your character and your player card. There is no chat.</li>
+        <li>If you're under 13, we don't run analytics on you, and nobody can find you by searching your name.</li>
+        <li>No ads. Nothing to buy. We don't sell or share your data for advertising, and we don't track you across other apps.</li>
+        <li>You can delete everything. See &ldquo;Deleting your data&rdquo; below.</li>
+      </ul>
     </header>
 
     <section>
-      <h2>Information We Collect</h2>
+      <h2>What we collect, and why</h2>
+      <h3>A player ID</h3>
       <ul>
-        <li>
-          <strong>Account details.</strong> If you create an account, we store your name,
-          username, and authentication credentials.
-        </li>
-        <li>
-          <strong>Learning progress.</strong> We keep track of scores, streaks, and in-app
-          preferences so the Service can adapt to your skill level.
-        </li>
-        <li>
-          <strong>Usage analytics.</strong> We collect device information and diagnostic logs to
-          understand how features perform.
-        </li>
+        <li>When you first open the app, it makes an anonymous account for you (Firebase Authentication, run by Google). That gives you a random ID.</li>
+        <li>If you choose Sign in with Apple, Apple gives us an ID for you as well. We never ask Apple for your email.</li>
+        <li>Why: so your name, card and crews belong to you.</li>
+      </ul>
+      <h3>Your name</h3>
+      <ul>
+        <li>Every player gets a made-up name from us, such as &ldquo;Bold Puma&rdquo;. You can type your own instead.</li>
+        <li>Typed names go through a filter before anyone sees them.</li>
+        <li>If an adult signs in with Apple and Apple shares a first name, we may offer it as your name. It goes through the same filter.</li>
+        <li>A child's Apple name is never used.</li>
+        <li>Why: so other players and your crew know who they're racing.</li>
+      </ul>
+      <h3>Your age group</h3>
+      <ul>
+        <li>The first screen asks for your month and year of birth. That date stays on your phone.</li>
+        <li>We store only whether you're under 13 or not and, for a child, the month you turn 13.</li>
+        <li>Why: to switch analytics off and lock adult-only features for children.</li>
+      </ul>
+      <h3>Your races</h3>
+      <ul>
+        <li>For each race we keep your answers, your answer times, scores and rounds won.</li>
+        <li>From those we build your player card: races played, speed average, Speed, Accuracy and Streak ratings, and rank colour.</li>
+        <li>We also keep your character's look, who you've raced with, your crews (including crew names you type), and crew invites.</li>
+        <li>Why: to run matches, build your card, and let you invite people you've raced with.</li>
+      </ul>
+      <h3>Notifications</h3>
+      <ul>
+        <li>If you allow notifications, we store your phone's push token. It is filed under your player ID with an ID Apple gives our app on your device.</li>
+        <li>Why: to send crew alerts.</li>
+        <li>The 7 pm reminder is set on your phone and doesn't use our server.</li>
+      </ul>
+      <h3>Reports</h3>
+      <ul>
+        <li>If you report a name, we store who reported it and which name.</li>
+        <li>If a typed name is refused, we log that.</li>
+        <li>Why: to deal with rude names and repeat offenders.</li>
+      </ul>
+      <h3>Analytics: adults only</h3>
+      <ul>
+        <li>For players we know are 13 or over, we use Google Analytics for Firebase to see how the app is used: which screens are opened, what's tapped, and how races end.</li>
+        <li>Events carry counts and choices. They never carry names, player IDs or crew codes.</li>
+        <li>Google gives each install a random analytics ID and estimates a rough region from a shortened IP address. We don't use your device's location.</li>
+        <li>Analytics is <strong>off</strong> for anyone under 13, and for anyone who hasn't entered a birthday.</li>
+        <li>No advertising ID is collected, and analytics data isn't used for ads.</li>
+      </ul>
+      <h3>Server logs</h3>
+      <ul>
+        <li>Our servers run on Google Cloud. When the app calls them, Google logs the request, including your IP address.</li>
+        <li>Why: to keep the service running and stop abuse.</li>
+      </ul>
+      <h3>What we don't collect</h3>
+      <ul>
+        <li>Your email, phone number, contacts, photos, camera, microphone or precise location.</li>
+        <li>Payment details. There's nothing to buy.</li>
+        <li>Motion data. Tilting your phone moves the buttons a little, and that motion stays on your phone.</li>
       </ul>
     </section>
 
     <section>
-      <h2>How We Use Information</h2>
+      <h2>What other players see</h2>
+      <h3>In a room</h3>
       <ul>
-        <li>Deliver and personalize math challenges and study plans.</li>
-        <li>Maintain account security, troubleshoot issues, and prevent abuse.</li>
-        <li>Analyze aggregated trends to improve curriculum design.</li>
-        <li>Comply with legal obligations and enforce our Terms of Service.</li>
+        <li>Your name, your character and your player card.</li>
+        <li>The preset reactions you send (&ldquo;HAHAHA&rdquo;, &ldquo;TOO SLOW&rdquo;, &ldquo;BRING IT&rdquo;, &ldquo;HURRY UP&rdquo;).</li>
+        <li>There is no chat and no free text anywhere in the app.</li>
+      </ul>
+      <h3>Who can be in a room</h3>
+      <ul>
+        <li>Open rooms are public. Anyone can join, children and adults alike.</li>
+        <li>Locked rooms need a 4-digit key from the person who made the room.</li>
+        <li>Crew rooms are only for that crew.</li>
+      </ul>
+      <h3>In a crew</h3>
+      <p>The other members see your name and your crew races.</p>
+      <h3>Practice players</h3>
+      <ul>
+        <li>When open rooms are quiet, the app fills empty seats with practice players. These are computer players run by the app, not people.</li>
+        <li>They never join locked or crew rooms, and they never collect anything from you.</li>
+      </ul>
+      <h3>Name search</h3>
+      <ul>
+        <li>Adults can find other adults by name to invite them to a crew.</li>
+        <li>Nobody can find a player under 13 by name.</li>
+        <li>A child can only be invited to a crew by someone they've raced in a locked room, or someone already in a crew with them.</li>
       </ul>
     </section>
 
     <section>
-      <h2>When We Share Information</h2>
-      <p>
-        We do not sell your personal information. We only share limited data with service
-        providers that host our infrastructure, process payments, or deliver push notifications.
-        These providers are contractually obligated to protect your information and may not use it
-        for their own marketing.
-      </p>
-      <p>
-        We may disclose information if required by law, to protect the integrity of MathBlitz, or
-        to investigate abuse.
-      </p>
+      <h2>Children under 13</h2>
+      <p>Math Blitz is used by children as well as adults. For a player under 13:</p>
+      <ul>
+        <li>Analytics is off.</li>
+        <li>Their birthday stays on the phone. We keep only the age group and the month they turn 13.</li>
+        <li>Nobody can find them by name search, and they can't search.</li>
+        <li>Changing the birthday, deleting their data, or opening this policy in a browser sits behind a parent check.</li>
+        <li>They can type a name. It is filtered for rude words, and anyone can report it. <strong>A typed name is shown to other players in public rooms, including adults.</strong> If you'd rather your child stays anonymous, keep the made-up name we give them.</li>
+        <li>We don't knowingly collect anything else from a child, and we never sell it.</li>
+      </ul>
+      <p>Parents can see or delete their child's data at any time. See &ldquo;Deleting your data&rdquo;, or email clyonkj@gmail.com.</p>
     </section>
 
     <section>
-      <h2>Your Choices &amp; Rights</h2>
+      <h2>Who we share data with</h2>
+      <p>We don't sell personal information. We don't share it for advertising, and we don't track you across other companies' apps or websites.</p>
+      <p>We use these service providers. They process data only to run Math Blitz:</p>
+      <table>
+        <tr><th>Provider</th><th>What for</th></tr>
+        <tr><td>Google (Firebase Authentication, Cloud Firestore, Cloud Functions, Google Cloud)</td><td>Accounts, game data, servers. Hosted in the United States.</td></tr>
+        <tr><td>Google Analytics for Firebase</td><td>Usage analytics, adults only</td></tr>
+        <tr><td>Apple (Sign in with Apple, Apple Push Notification service)</td><td>Optional sign-in; delivering notifications</td></tr>
+      </table>
+      <p>We may disclose information if the law requires it, or to protect players from abuse.</p>
+    </section>
+
+    <section>
+      <h2>How long we keep it</h2>
       <ul>
-        <li>Update or delete your profile data directly in the app settings.</li>
-        <li>Request a copy of your data or ask us to erase it by emailing support@mathblitz.app.</li>
-        <li>Opt out of optional analytics by toggling the Diagnostics control inside the app.</li>
+        <li><strong>Your account, name, card, crews and race history:</strong> until you delete them, or until you ask us to.</li>
+        <li><strong>Report and moderation records:</strong> while the account they concern exists, and deleted with it.</li>
+        <li><strong>Rooms:</strong> empty and abandoned rooms are cleared automatically. Other room records are removed when the player who started the room deletes their account.</li>
+        <li><strong>Analytics (adults):</strong> event data for 2 months and user-level data for up to 14 months, then Google deletes it.</li>
+        <li><strong>Server logs:</strong> Google Cloud keeps request logs for 30 days.</li>
+        <li><strong>On your phone:</strong> the names you've reported, players you've blocked, and your settings stay on your phone until you delete the app.</li>
       </ul>
     </section>
 
     <section>
-      <h2>Children</h2>
-      <p>
-        MathBlitz is designed for students but is not marketed to children under 13 in jurisdictions
-        that require parental consent. If we learn that we collected personal information from a
-        child without permission, we will delete it promptly.
-      </p>
+      <h2>Deleting your data</h2>
+      <h3>In the app</h3>
+      <ul>
+        <li>If you signed in with Apple: Me tab &rarr; Delete account.</li>
+        <li>If you never signed in: Me tab &rarr; Delete my data.</li>
+        <li>This removes your profile, name, age group, card, crews and crew invites, race history, rooms you started, push tokens, reports about your name, and the sign-in account itself.</li>
+        <li>It can't be undone.</li>
+      </ul>
+      <h3>By email</h3>
+      <ul>
+        <li>Email clyonkj@gmail.com with your player name, and roughly when you last played.</li>
+        <li>Parents can ask for a child's data to be deleted this way.</li>
+        <li>We'll delete it within 30 days and reply to confirm.</li>
+      </ul>
     </section>
 
     <section>
-      <h2>Data Retention &amp; Security</h2>
-      <p>
-        We retain personal information only as long as needed for the purposes described in this
-        policy or as required by law. We apply administrative, technical, and physical safeguards to
-        protect your data. No method of transmission is 100% secure, but we regularly monitor for
-        vulnerabilities.
-      </p>
+      <h2>Your choices</h2>
+      <ul>
+        <li><strong>Notifications:</strong> turn off the 7 pm reminder in the Me tab. Turn off all notifications in iOS Settings.</li>
+        <li><strong>Report or block:</strong> in a race, long-press another player's name, or tap &ldquo;&hellip;&rdquo; next to them on the results. Report hides the name for you at once, and two reports take it down for everyone. Block hides their name for you, and keeps you out of rooms they start.</li>
+        <li><strong>Your name:</strong> change it any time. Or keep the made-up name, which identifies no one.</li>
+      </ul>
+      <p>Depending on where you live, you may have the right to see, correct, export or delete your data. Email us and we'll help.</p>
     </section>
 
     <section>
-      <h2>Changes to This Policy</h2>
-      <p>
-        We may update this policy to reflect new features or regulatory requirements. We will post a
-        notice in the app or email you when material updates occur. Continued use of the Service
-        after the policy changes means you accept the revised policy.
-      </p>
+      <h2>Security</h2>
+      <p>Data travels encrypted between the app and our servers. Access is restricted by our database rules, so a player can only change their own data. No system is perfectly secure. If something goes wrong that affects you, we'll tell you.</p>
     </section>
 
     <section>
-      <h2>Contact Us</h2>
-      <p>
-        If you have questions or requests about this Privacy Policy or your personal data, contact
-        us at <a href="mailto:privacy@mathblitz.app">privacy@mathblitz.app</a>.
-      </p>
+      <h2>Changes</h2>
+      <p>If we change this policy, we'll update the date at the top. If the change is big, we'll say so in the app's update notes before it takes effect.</p>
     </section>
 
-    <footer>
-      &copy; 2025 MathBlitz. All rights reserved.
-    </footer>
+    <section>
+      <h2>Contact</h2>
+      <p>Clyon Jackson<br />clyonkj@gmail.com</p>
+      <p>Help with the app: <a href="support.html">Math Blitz support</a>.</p>
+    </section>
+
+    <footer>&copy; 2026 Math Blitz</footer>
   </body>
 </html>
