@@ -22,12 +22,13 @@
   <body>
     <header>
       <h1>Math Blitz Privacy Policy</h1>
-      <p>Last updated: October 5, 2026</p>
+      <p>Last updated: November 18, 2026</p>
       <p>Math Blitz is a live mental-math game for iPhone and iPad. It is made by Clyon Jackson (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This policy covers the Math Blitz app.</p>
       <p>The short version:</p>
       <ul>
-        <li>We collect what the game needs to work: a player ID, the name you play under, your age group, and your races.</li>
-        <li>Other players see your name, your character and your player card. There is no chat.</li>
+        <li>We collect what the game needs to work: a player ID, the name you play under, your age group, and your games.</li>
+        <li>Other players see your name, your character and your player card. Nobody can type messages to other players.</li>
+        <li>Players 13 and over can send short voice notes to their crew in private Game Night games. Players under 13 can't.</li>
         <li>If you're under 13, we don't run analytics on you, and nobody can find you by searching your name.</li>
         <li>No ads. Nothing to buy. We don't sell or share your data for advertising, and we don't track you across other apps.</li>
         <li>You can delete everything. See &ldquo;Deleting your data&rdquo; below.</li>
@@ -48,37 +49,68 @@
         <li>Typed names go through a filter before anyone sees them.</li>
         <li>If an adult signs in with Apple and Apple shares a first name, we may offer it as your name. It goes through the same filter.</li>
         <li>A child's Apple name is never used.</li>
-        <li>Why: so other players and your crew know who they're racing.</li>
+        <li>Why: so other players and your crew know who they're playing.</li>
       </ul>
       <h3>Your age group</h3>
       <ul>
         <li>The first screen asks for your month and year of birth. That date stays on your phone.</li>
         <li>We store only whether you're under 13 or not and, for a child, the month you turn 13.</li>
-        <li>Why: to switch analytics off and lock adult-only features for children.</li>
+        <li>Why: to switch analytics off and lock adult-only features, such as voice notes, for children.</li>
       </ul>
-      <h3>Your races</h3>
+      <!-- AGE CHECK: this subsection and the 3 other lines marked AGE CHECK go only if Apple's age check (AppleAgeCheck.enabled) ships in the build. -->
+      <h3>Apple's age check</h3>
       <ul>
-        <li>For each race we keep your answers, your answer times, scores and rounds won.</li>
+        <li>On iOS 26 and later, the first time a player 13 or over holds the mic in Game Night, the app asks Apple whether this account is under 13. Apple asks you whether to share that.</li>
+        <li>We ask Apple for an age range only, never a birthday.</li>
+        <li>The answer stays on your phone. We use it only to decide whether the mic shows.</li>
+        <li>If Apple says under 13, there is no mic, whatever birthday was typed in. If you choose not to share, the birthday you typed decides.</li>
+      </ul>
+      <h3>Your games</h3>
+      <ul>
+        <li>For each race or game we keep your answers, your answer times, scores and rounds won.</li>
         <li>From those we build your player card: races played, speed average, Speed, Accuracy and Streak ratings, and rank colour.</li>
+        <li>We keep your best Blitz score and your time on each day's Grid, for the high score boards.</li>
         <li>We also keep your character's look, who you've raced with, your crews (including crew names you type), and crew invites.</li>
-        <li>Why: to run matches, build your card, and let you invite people you've raced with.</li>
+        <li>In Game Night we keep the shouts you send, and the list of players a host removed from a game.</li>
+        <li>Why: to run games, build your card and the boards, and let you invite people you've raced with.</li>
+      </ul>
+      <h3>Voice notes (13 and over only)</h3>
+      <ul>
+        <!-- AGE CHECK: without it, end the first sentence at "from the birthday you typed." -->
+        <li>Only players 13 and over can send voice notes. We go by the age group our server holds for you, from the birthday you typed, and by Apple's age check above. No birthday, no mic.</li>
+        <li>Voice notes work only in private Game Night games, the ones you join with a family or crew game code. Never in the public Game Night room.</li>
+        <li>The phone records only while you hold the mic button, for up to 5 seconds.</li>
+        <li>Your phone turns the speech into text with Apple's speech recognition, on the phone itself. The sound is not sent to Apple for this.</li>
+        <li>The sound and the text go to our server (Google Firebase). The server checks the text for swear words. A note with a swear word is not sent and not kept. Our server log notes which word it was and in which game.</li>
+        <li>The server sends the note only to players in the same game who share a crew with you. Other players in the game don't get it.</li>
+        <li>While the note plays, its text shows as a caption with your name.</li>
+        <li>The recording on your phone is deleted once it's sent.</li>
+        <li>Notes on our server are set to delete about an hour after they're sent. The automatic delete can run up to a day late.</li>
+        <li>If someone reports a note, we keep a copy of it (the sound, the text, who sent it and who reported it) until we've reviewed the report.</li>
+        <li>Why: so family and crew who aren't in the same room can talk during Game Night.</li>
+      </ul>
+      <h3>Microphone and speech recognition</h3>
+      <ul>
+        <li>The app asks for the microphone and for speech recognition the first time you hold the mic.</li>
+        <li>You can turn either one off any time in iOS Settings &rarr; Math Blitz. With either one off, there is no mic in the app.</li>
       </ul>
       <h3>Notifications</h3>
       <ul>
         <li>If you allow notifications, we store your phone's push token. It is filed under your player ID with an ID Apple gives our app on your device.</li>
-        <li>Why: to send crew alerts.</li>
-        <li>The 7 pm reminder is set on your phone and doesn't use our server.</li>
+        <li>Why: to send crew alerts, a Game Night alert when Game Night opens, and an alert when the day's Grid is up.</li>
       </ul>
       <h3>Reports</h3>
       <ul>
         <li>If you report a name, we store who reported it and which name.</li>
+        <li>If you report a voice note, we store who reported it and a copy of the note.</li>
         <li>If a typed name is refused, we log that.</li>
-        <li>Why: to deal with rude names and repeat offenders.</li>
+        <li>Why: to deal with rude names, rude voice notes and repeat offenders.</li>
       </ul>
       <h3>Analytics: adults only</h3>
       <ul>
-        <li>For players we know are 13 or over, we use Google Analytics for Firebase to see how the app is used: which screens are opened, what's tapped, and how races end.</li>
+        <li>For players we know are 13 or over, we use Google Analytics for Firebase to see how the app is used: which screens are opened, what's tapped, and how games end.</li>
         <li>Events carry counts and choices. They never carry names, player IDs or crew codes.</li>
+        <li>Game Night events say things like how many seconds a voice note was, why a note wasn't sent, which shout was tapped, and which host control was used. They never carry the sound or the words of a note.</li>
         <li>Google gives each install a random analytics ID and estimates a rough region from a shortened IP address. We don't use your device's location.</li>
         <li>Analytics is <strong>off</strong> for anyone under 13, and for anyone who hasn't entered a birthday.</li>
         <li>No advertising ID is collected, and analytics data isn't used for ads.</li>
@@ -90,7 +122,8 @@
       </ul>
       <h3>What we don't collect</h3>
       <ul>
-        <li>Your email, phone number, contacts, photos, camera, microphone or precise location.</li>
+        <li>Your email, phone number, contacts, photos, camera or precise location.</li>
+        <li>Sound from your microphone, except the voice notes you choose to send (13 and over). The mic is on only while you hold the button.</li>
         <li>Payment details. There's nothing to buy.</li>
         <li>Motion data. Tilting your phone moves the buttons a little, and that motion stays on your phone.</li>
       </ul>
@@ -102,8 +135,23 @@
       <ul>
         <li>Your name, your character and your player card.</li>
         <li>The preset reactions you send (&ldquo;HAHAHA&rdquo;, &ldquo;TOO SLOW&rdquo;, &ldquo;BRING IT&rdquo;, &ldquo;HURRY UP&rdquo;).</li>
-        <li>There is no chat and no free text anywhere in the app.</li>
       </ul>
+      <h3>In Game Night</h3>
+      <ul>
+        <li>Other players in the game see your name, your character and your score.</li>
+        <li>Shouts: anyone can tap a fixed shout (&ldquo;HAHAHA&rdquo;, &ldquo;TOO SLOW&rdquo;, &ldquo;BRING IT&rdquo;, &ldquo;HURRY UP&rdquo;). Nothing is typed or recorded. The players in the game see it.</li>
+        <li>Voice notes: crew-mates in a private game hear your note and see its caption with your name. See &ldquo;Voice notes&rdquo; above.</li>
+        <li>Players under 13, and players who haven't entered a birthday, get more time on each question. To do that, the phones in the game are told which players those are.</li>
+        <li>The public Game Night room is open to everyone, children and adults alike. You're shown there under the copy of your name our filter has checked. The winner's name, character and score show on every player's Home screen until the next Game Night.</li>
+        <li>A private Game Night game can only be joined with its game code.</li>
+      </ul>
+      <h3>What a Game Night host can do</h3>
+      <ul>
+        <li>The player who starts a Game Night game (the host) can remove a player from it. A removed player can't rejoin that game, and their voice notes stop.</li>
+        <li>The host can turn voice notes or shouts off for that game.</li>
+      </ul>
+      <h3>No typed chat</h3>
+      <p>Nobody can type messages to other players anywhere in the app. The only way to talk is voice notes in private Game Night games, from players 13 and over.</p>
       <h3>Who can be in a room</h3>
       <ul>
         <li>Open rooms are public. Anyone can join, children and adults alike.</li>
@@ -112,6 +160,8 @@
       </ul>
       <h3>In a crew</h3>
       <p>The other members see your name and your crew races.</p>
+      <h3>High score boards</h3>
+      <p>Your name and best score show on the Blitz high score board, and your name and time on the day's Grid board. Kids and adults have separate boards.</p>
       <h3>Practice players</h3>
       <ul>
         <li>When open rooms are quiet, the app fills empty seats with practice players. These are computer players run by the app, not people.</li>
@@ -132,8 +182,11 @@
         <li>Analytics is off.</li>
         <li>Their birthday stays on the phone. We keep only the age group and the month they turn 13.</li>
         <li>Nobody can find them by name search, and they can't search.</li>
+        <li>They can't send voice notes. The app doesn't show them the mic, and our server refuses a note from anyone it doesn't know is 13 or over.</li>
+        <li>In a private Game Night game, they can hear voice notes from players 13 and over who share a crew with them, and see the captions. To turn this off on their device: Me tab &rarr; Play voice notes.</li>
+        <li>They can send shouts. These are fixed phrases. Nothing is typed or recorded.</li>
         <li>Changing the birthday, deleting their data, or opening this policy in a browser sits behind a parent check.</li>
-        <li>They can type a name. It is filtered for rude words, and anyone can report it. <strong>A typed name is shown to other players in public rooms, including adults.</strong> If you'd rather your child stays anonymous, keep the made-up name we give them.</li>
+        <li>They can type a name. It is filtered for rude words, and anyone can report it. <strong>A typed name is shown to other players in public rooms and the public Game Night room, including adults.</strong> If you'd rather your child stays anonymous, keep the made-up name we give them.</li>
         <li>We don't knowingly collect anything else from a child, and we never sell it.</li>
       </ul>
       <p>Parents can see or delete their child's data at any time. See &ldquo;Deleting your data&rdquo;, or email clyonkj@gmail.com.</p>
@@ -145,22 +198,28 @@
       <p>We use these service providers. They process data only to run Math Blitz:</p>
       <table>
         <tr><th>Provider</th><th>What for</th></tr>
-        <tr><td>Google (Firebase Authentication, Cloud Firestore, Cloud Functions, Google Cloud)</td><td>Accounts, game data, servers. Hosted in the United States.</td></tr>
+        <tr><td>Google (Firebase Authentication, Cloud Firestore, Cloud Functions, Google Cloud)</td><td>Accounts, game data, voice notes, servers. Hosted in the United States.</td></tr>
         <tr><td>Google Analytics for Firebase</td><td>Usage analytics, adults only</td></tr>
-        <tr><td>Apple (Sign in with Apple, Apple Push Notification service)</td><td>Optional sign-in; delivering notifications</td></tr>
+        <!-- AGE CHECK: without it, drop "Declared Age Range" and "the age check before the mic shows (...)" from this row. -->
+        <tr><td>Apple (Sign in with Apple, Apple Push Notification service, Declared Age Range)</td><td>Optional sign-in; delivering notifications; the age check before the mic shows (an age range only, kept on your phone)</td></tr>
       </table>
+      <p>Speech-to-text for voice notes runs on your phone with Apple's speech recognition. The sound is not sent to Apple for it.</p>
       <p>We may disclose information if the law requires it, or to protect players from abuse.</p>
     </section>
 
     <section>
       <h2>How long we keep it</h2>
       <ul>
-        <li><strong>Your account, name, card, crews and race history:</strong> until you delete them, or until you ask us to.</li>
-        <li><strong>Report and moderation records:</strong> while the account they concern exists, and deleted with it.</li>
+        <li><strong>Your account, name, card, crews, race history and high scores:</strong> until you delete them, or until you ask us to.</li>
+        <li><strong>Voice notes:</strong> set to delete about an hour after they're sent. The automatic delete can run up to a day late.</li>
+        <li><strong>Reported voice notes:</strong> until we've reviewed the report.</li>
+        <li><strong>Name reports and moderation records:</strong> while the account they concern exists, and deleted with it.</li>
         <li><strong>Rooms:</strong> empty and abandoned rooms are cleared automatically. Other room records are removed when the player who started the room deletes their account.</li>
+        <li><strong>Game Night games:</strong> kept until the player who started the game deletes their account. Your seat in a game someone else started is removed when you delete your account.</li>
         <li><strong>Analytics (adults):</strong> event data for 2 months and user-level data for up to 14 months, then Google deletes it.</li>
         <li><strong>Server logs:</strong> Google Cloud keeps request logs for 30 days.</li>
-        <li><strong>On your phone:</strong> the names you've reported, players you've blocked, and your settings stay on your phone until you delete the app.</li>
+        <!-- AGE CHECK: without it, drop "and Apple's age check answer". -->
+        <li><strong>On your phone:</strong> the names you've reported, players you've blocked, your settings and Apple's age check answer stay on your phone until you delete the app.</li>
       </ul>
     </section>
 
@@ -170,7 +229,8 @@
       <ul>
         <li>If you signed in with Apple: Me tab &rarr; Delete account.</li>
         <li>If you never signed in: Me tab &rarr; Delete my data.</li>
-        <li>This removes your profile, name, age group, card, crews and crew invites, race history, rooms you started, push tokens, reports about your name, and the sign-in account itself.</li>
+        <li>This removes your profile, name, age group, card, crews and crew invites, race history, high scores, rooms and Game Night games you started, your seats in other games, push tokens, reports about your name, and the sign-in account itself.</li>
+        <li>Voice notes delete themselves, as above. A voice note someone reported is kept until we've reviewed the report.</li>
         <li>It can't be undone.</li>
       </ul>
       <h3>By email</h3>
@@ -184,8 +244,12 @@
     <section>
       <h2>Your choices</h2>
       <ul>
-        <li><strong>Notifications:</strong> turn off the 7 pm reminder in the Me tab. Turn off all notifications in iOS Settings.</li>
-        <li><strong>Report or block:</strong> in a race, long-press another player's name, or tap &ldquo;&hellip;&rdquo; next to them on the results. Report hides the name for you at once, and two reports take it down for everyone. Block hides their name for you, and keeps you out of rooms they start.</li>
+        <li><strong>Notifications:</strong> turn off Game Night alerts or Crew alerts in the Me tab. Turn off all notifications in iOS Settings.</li>
+        <li><strong>Voice notes you hear:</strong> Me tab &rarr; Play voice notes turns them off on this device.</li>
+        <li><strong>Mute, block or report a voice note:</strong> while a note plays, long-press its caption or the player's name. Mute stops that player's notes for the rest of the game, on your phone only. Block works on your phone only, as below, and stops their notes and shouts too. Report tells us which note, and we keep a copy to review.</li>
+        <li><strong>Shouts you see:</strong> Me tab &rarr; Lobby reactions off also hides other players' shouts in Game Night.</li>
+        <li><strong>Microphone and speech recognition:</strong> turn either off in iOS Settings &rarr; Math Blitz.</li>
+        <li><strong>Report or block a name:</strong> in a race, long-press another player's name, or tap &ldquo;&hellip;&rdquo; next to them on the results. Report hides the name for you at once, and two reports take it down for everyone. Block hides their name for you, and keeps you out of rooms they start.</li>
         <li><strong>Your name:</strong> change it any time. Or keep the made-up name, which identifies no one.</li>
       </ul>
       <p>Depending on where you live, you may have the right to see, correct, export or delete your data. Email us and we'll help.</p>
@@ -193,7 +257,7 @@
 
     <section>
       <h2>Security</h2>
-      <p>Data travels encrypted between the app and our servers. Access is restricted by our database rules, so a player can only change their own data. No system is perfectly secure. If something goes wrong that affects you, we'll tell you.</p>
+      <p>Data travels encrypted between the app and our servers. Access is restricted by our database rules, so a player can only change their own data, and a voice note can only be read by the players it was sent to. No system is perfectly secure. If something goes wrong that affects you, we'll tell you.</p>
     </section>
 
     <section>
