@@ -57,7 +57,6 @@
         <li>We store only whether you're under 13 or not and, for a child, the month you turn 13.</li>
         <li>Why: to switch analytics off and lock adult-only features, such as voice notes, for children.</li>
       </ul>
-      <!-- AGE CHECK: this subsection and the 3 other lines marked AGE CHECK go only if Apple's age check (AppleAgeCheck.enabled) ships in the build. -->
       <h3>Apple's age check</h3>
       <ul>
         <li>On iOS 26 and later, the first time a player 13 or over holds the mic in Game Night, the app asks Apple whether this account is under 13. Apple asks you whether to share that.</li>
@@ -76,7 +75,6 @@
       </ul>
       <h3>Voice notes (13 and over only)</h3>
       <ul>
-        <!-- AGE CHECK: without it, end the first sentence at "from the birthday you typed." -->
         <li>Only players 13 and over can send voice notes. We go by the age group our server holds for you, from the birthday you typed, and by Apple's age check above. No birthday, no mic.</li>
         <li>Voice notes work only in private Game Night games, the ones you join with a family or crew game code. Never in the public Game Night room.</li>
         <li>The phone records only while you hold the mic button, for up to 5 seconds.</li>
@@ -200,7 +198,6 @@
         <tr><th>Provider</th><th>What for</th></tr>
         <tr><td>Google (Firebase Authentication, Cloud Firestore, Cloud Functions, Google Cloud)</td><td>Accounts, game data, voice notes, servers. Hosted in the United States.</td></tr>
         <tr><td>Google Analytics for Firebase</td><td>Usage analytics, adults only</td></tr>
-        <!-- AGE CHECK: without it, drop "Declared Age Range" and "the age check before the mic shows (...)" from this row. -->
         <tr><td>Apple (Sign in with Apple, Apple Push Notification service, Declared Age Range)</td><td>Optional sign-in; delivering notifications; the age check before the mic shows (an age range only, kept on your phone)</td></tr>
       </table>
       <p>Speech-to-text for voice notes runs on your phone with Apple's speech recognition. The sound is not sent to Apple for it.</p>
@@ -218,7 +215,6 @@
         <li><strong>Game Night games:</strong> kept until the player who started the game deletes their account. Your seat in a game someone else started is removed when you delete your account.</li>
         <li><strong>Analytics (adults):</strong> event data for 2 months and user-level data for up to 14 months, then Google deletes it.</li>
         <li><strong>Server logs:</strong> Google Cloud keeps request logs for 30 days.</li>
-        <!-- AGE CHECK: without it, drop "and Apple's age check answer". -->
         <li><strong>On your phone:</strong> the names you've reported, players you've blocked, your settings and Apple's age check answer stay on your phone until you delete the app.</li>
       </ul>
     </section>
